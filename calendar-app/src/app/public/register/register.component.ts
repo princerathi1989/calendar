@@ -69,7 +69,6 @@ export class RegisterComponent implements OnInit {
   register(): void {
     this.sharedService.showLoader('Creating you account.');
     const userData = this.getFormattedData(this.form.value);
-    this.form.reset();
     this.subs.push(this.facadeService.addUser(userData).subscribe(
       (data) => {
         this.sharedService.hideLoader();

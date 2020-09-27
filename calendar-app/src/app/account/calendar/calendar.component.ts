@@ -58,12 +58,15 @@ export class CalendarComponent implements OnInit, OnDestroy {
         if (res === null || res === undefined) {
           this.streamService.getAppointments(this.sharedService.getWithExpiry('id'));
         } else {
-          const data = JSON.parse(res.data.appointments);
-          data.forEach((item: EventValues) => {
-            item.start = new Date(item.start);
-            item.end = new Date(item.end);
-          });
-          this.events = data;
+          if (res.data.appointments) {
+            const data = JSON.parse(res.data.appointments);
+            data.forEach((item: EventValues) => {
+              item.start = new Date(item.start);
+              item.end = new Date(item.end);
+            });
+            this.events = data;
+          }
+
         }
       })
     );
