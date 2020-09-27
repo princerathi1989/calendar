@@ -5,6 +5,14 @@ The user needs to first register in order to access the calendar.
 
 
 
+## Prerequisites
+
+1. Node - latest version preferred
+
+2. Angular CLI - latest version preferred
+
+
+
 ## Development server
 
 1. Go to `calendar-api` folder and run `npm install`
