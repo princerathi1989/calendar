@@ -9,7 +9,7 @@ The user needs to first register in order to access the calendar.
 
 1. Go to `calendar-api` folder and run `npm install`
 
-2. After the installation of dependencies, run `npm run devStart` to start the backend node server. 
+2. After the installation of dependencies, run `npm run devStart` to start the express server. 
 
 3. Go to `calendar-app` folder and run `npm install`
 
@@ -25,9 +25,13 @@ The user needs to first register in order to access the calendar.
 
 2. You can install "SQLiteStudio" for GUI and import the `db.sqlite` file to view the database, present in `calendar-api` folder.
 
+3. There is one image present in the root directory showing the database schema.
+
 
 
 ## APIs
 
-1. You can see the available APIs in the `request.rest` file, present in `calendar-api` folder.
+1. VS code provides "Rest Client" extension which helps in testing the APIs response.
+
+2. You can see the available APIs in the `request.rest` file, present in `calendar-api` folder.
 
