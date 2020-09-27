@@ -1,0 +1,23 @@
+{
+  "name": "calendar-api",
+  "version": "1.0.0",
+  "description": "To create and manage the appointments",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon index.js"
+  },
+  "keywords": [
+    "calendar",
+    "appointments"
+  ],
+  "author": "Prince Chaudhary",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "md5": "^2.3.0",
+    "nodemon": "^2.0.4",
+    "sqlite3": "^5.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>Log in</mat-card-title>
+        </mat-card-header>
+        <form (ngSubmit)="login()" [formGroup]="form" class="example-form">
+            <mat-card-content>
+                <mat-form-field class="example-full-width">
+                    <input formControlName="email" matInput placeholder="Email">
+                    <mat-error *ngIf="form.get('email').hasError('required')" class="error-text">we need your
+                        email address</mat-error>
+                    <mat-error *ngIf="form.get('email').hasError('pattern')" class="error-text">please add a
+                        valid email address</mat-error>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input type="password" formControlName="password" matInput placeholder="Password">
+                </mat-form-field>
+            </mat-card-content>
+            <button mat-raised-button color="primary" class="btn-block">Log in</button>
+        </form>
+        <br>
+        <span>Not a member yet? </span><a routerLink="/public/register">Register</a>
+    </mat-card>
+</div>

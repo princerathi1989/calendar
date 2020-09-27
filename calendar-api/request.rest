@@ -1,0 +1,47 @@
+### 
+GET http://localhost:3000/api/users
+
+###
+GET http://localhost:3000/api/user/1
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "firstName": "Prince",
+    "lastName": "Chaudhary",
+    "email": "prince@mail.com",
+    "phone": "8970090001",
+    "password": "Test123"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "rahul@gmail.com",
+    "password": "Rahul@123"
+}
+
+###
+GET http://localhost:3000/api/appointments/1
+
+###
+PUT http://localhost:3000/api/appointments
+Content-Type: application/json
+
+{
+  "id": 1,
+  "data": {
+    "id": 1,
+    "title": "Test Event 1",
+    "color": {
+      "primary": "#d93c00",
+      "secondary": "#018928"
+    },
+    "start": "2020-09-11T18:30:00.000Z",
+    "end": "2020-09-20T18:29:59.999Z"
+  }
+}
