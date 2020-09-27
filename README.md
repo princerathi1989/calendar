@@ -33,7 +33,7 @@ The user needs to first register in order to access the calendar.
 
 2. You can install "SQLiteStudio" for GUI and import the `db.sqlite` file to view the database, present in `calendar-api` folder.
 
-3. There is one image present in the root directory showing the database schema.
+3. There is one image present in the root directory `db.jpg` showing the database schema.
 
 
 
